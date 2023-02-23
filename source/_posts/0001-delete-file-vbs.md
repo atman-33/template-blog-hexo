@@ -1,8 +1,8 @@
 ---
 title: 【VBS】指定したファイル、フォルダを削除する
 date: 2023-02-23 20:14:32
-categories: VBS
 tags: VBS
+categories: VBS
 ---
 
 VBSでファイル、フォルダを削除する関数のサンプルソースです。

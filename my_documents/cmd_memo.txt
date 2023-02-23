@@ -41,7 +41,7 @@ cd C:\Repos\computing-atman
 git status
 
 # ステージエリアにファイルを追加
-git add.
+git add -A
 
 # コミット
 git commit -m "XXX"
