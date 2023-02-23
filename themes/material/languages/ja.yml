@@ -5,11 +5,11 @@ sidebar:
 post:
     visitor: "訪問者"
     views: "ビュー"
-    continue: "読み続けて"
+    continue: "Continue"
     older: "古い"
     newer: "新しい"
     qrcode: "他のデバイスでこの記事を読む"
-    comments_load_button: "論評を読む「 あなたは disqus & disquscdn.com & disqus.com をロードできることを確認します」"    
+    comments_load_button: "論評を読む「 あなたは disqus & disquscdn.com & disqus.com をロードできることを確認します」"
     permalink: "このリンク："
 share:
     article_rss: "記事 RSS"

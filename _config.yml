@@ -4,12 +4,12 @@
 
 # Site
 title: Computing Atmman
-subtitle:
-description:
-keywords:
+subtitle: コンピューティング Atman
+description: IT関連の情報を発信します。
+keywords: システム,プログラミング,コンピューティング
 author: Atman
-language:
-timezone:
+language: ja
+timezone: Asia/Tokyo
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
