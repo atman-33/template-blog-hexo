@@ -142,7 +142,6 @@ class Player extends createjs.Shape{
 ```
 
 プレイヤークラスはcreatejs.Shapeを継承したサブクラスにしております。
-
 （つまり、createjs.Shapre はプレイヤークラスからするとスーパークラスとなります。）
 
 こうすることで、 createjs.Shape の持つフィールドとメソッドが流用可能となります。
