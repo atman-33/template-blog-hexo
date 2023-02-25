@@ -9,7 +9,7 @@ VBSでカレントフォルダのパスを取得する関数のサンプルソ�
 
 ### サンプルソース
 
-``` bash
+```
 Option Explicit
 
 Msgbox GetCurrentDirectory()
@@ -27,10 +27,9 @@ Function GetCurrentDirectory()
         WScript.Echo "エラー: " & Err.Description
         wscript.quit(1)
     End If
-    getCurrentDirectory = objWshShell.CurrentDirectory
+    GetCurrentDirectory = objWshShell.CurrentDirectory
 
 End Function
-
 ```
 
 ### 解説

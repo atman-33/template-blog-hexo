@@ -5,20 +5,20 @@ tags: VBS
 categories: VBS
 ---
 
-Settings.ini ファイルに格納されたデータを取得する方法を説明します。
-下記のように Settings.ini と GetIniData.vbs を同フォルダに格納して、Settings.ini に含まれたデータを読み取ります。
+Config.ini ファイルに格納されたデータを取得する方法を説明します。
+下記のように Config.ini と GetIniData.vbs Config.ini に含まれたデータを読み取ります。
 
 ## フォルダ構造
 
 ``` bash
 任意のフォルダ
- ├ Settings.ini
+ ├ Config.ini
  └ GetIniData.vbs
 ```
 
 ## サンプルソース
 
-▼Settings.ini
+Config.ini
 
 ``` bash
 [test1]
@@ -34,7 +34,7 @@ data4=fghij
 ``` bash
 Option Explicit
 
-Msgbox GetIniData(GetCurrentDirectory() & "\Settings.ini", "test1", "data1")
+Msgbox GetIniData(GetCurrentDirectory() & "\Config.ini", "test1", "data1")
 
 ' ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
 ' breif : カレントフォルダを取得する。
@@ -119,7 +119,7 @@ Function GetIniData(strIniFileName, strSection, strKey)
             Exit Function
         End If
     End If
-    getIniData = ""
+    GetIniData = ""
 
 End Function
 

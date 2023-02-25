@@ -9,7 +9,7 @@ VBSでファイル、フォルダを削除する関数のサンプルソース�
 
 ### サンプルソース
 
-``` bash
+```
 Option Explicit
 
 DeleteFolder "C:\sample"
