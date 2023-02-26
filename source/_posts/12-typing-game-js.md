@@ -8,7 +8,7 @@ categories: JavaScript
 thumbnail: /img/thumbnails/thumbnail-12.png
 ---
 
-Javascript を用いた『タイピングゲーム』を作成してみました。
+JavaScript を用いた『タイピングゲーム』を作成してみました。
 
 ## 概要
 制限時間内に、画面に表示された英単語をキーボードから入力していくゲームとなります。
