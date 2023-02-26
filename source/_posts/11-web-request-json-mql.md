@@ -1,7 +1,10 @@
 ---
 title: 【MQL】WebRequest関数でjsonデータを送信
 date: 2023-02-25 23:29:15
-tags: mql,WebRequest,json
+tags:
+- MQL
+- WebRequest
+- json
 categories: MQL
 ---
 

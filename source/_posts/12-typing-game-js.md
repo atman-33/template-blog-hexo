@@ -1,9 +1,11 @@
 ---
 title: 【Javascript】タイピングゲームのサンプル
 date: 2023-02-25 23:38:29
-tags: JavaScript,タイピングゲーム
+tags:
+- JavaScript
+- タイピングゲーム
 categories: JavaScript
-thumbnail: /computing-atman/img/thumbnails/thumbnail-12.png
+thumbnail: /img/thumbnails/thumbnail-12.png
 ---
 
 Javascript を用いた『タイピングゲーム』を作成してみました。
@@ -15,7 +17,7 @@ Javascript を用いた『タイピングゲーム』を作成してみました
 
 [【ソースコードはこちら】](https://github.com/atman-33/typing-game-js)
 
-{% asset_img typing.png %} 
+{% asset_img typing.png %}
 
 ## パッケージ構成
 構成は下記となります。

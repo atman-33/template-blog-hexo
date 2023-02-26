@@ -1,3 +1,4 @@
+<!-- 下記のデフォルトスクリプトは利用せず、直接タグを記載する事とした。by Atman
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -5,3 +6,18 @@
     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
     ga('create', '<%= theme.analytics.google_site_id %>', 'auto');ga('send', 'pageview');
 </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1W91JVY5LN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1W91JVY5LN');
+</script>
+
+<!-- Google AdSense Code -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3632222360837456"
+     crossorigin="anonymous"></script>

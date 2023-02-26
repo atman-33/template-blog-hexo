@@ -27,6 +27,9 @@ http://localhost:4000
 # デプロイ
 hexo deploy -g
 
+# 【注意】Githubカスタムドメインを利用している場合、CNAMEファイルが消えるため注意
+# publicフォルダにCNAMEファイルを保存すること！
+
 # 公開サーバー画面を確認
 https://atman-33.github.io/computing-atman/
 

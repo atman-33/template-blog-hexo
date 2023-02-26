@@ -1,7 +1,10 @@
 ---
 title: 【VBS】Oracle DBからSELECTした結果をCSVファイルに保存
 date: 2023-02-25 15:50:59
-tags: VBS,Oracle,DB
+tags:
+- VBS
+- Oracle
+- DB
 categories: VBS
 ---
 

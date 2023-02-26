@@ -1,7 +1,9 @@
 ---
 title: 【Power Query】動的SQLの結果を読み込む方法（Power BI）
 date: 2023-02-25 16:52:40
-tags: PowerBI,PowerQuery
+tags:
+- PowerBI
+- PowerQuery
 categories: PowerQuery
 ---
 

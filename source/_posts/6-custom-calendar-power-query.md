@@ -1,7 +1,9 @@
 ---
 title: 【Power Query】パラメータ設定で指定した期間のカレンダー作成（Power BI）
 date: 2023-02-25 16:40:22
-tags: PowerBI,PowerQuery
+tags:
+- PowerBI
+- PowerQuery
 categories: PowerQuery
 ---
 

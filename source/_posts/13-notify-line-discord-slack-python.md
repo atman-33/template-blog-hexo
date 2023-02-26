@@ -1,7 +1,11 @@
 ---
 title: 【Python】Line, Discord,Slackへの通知クラス
 date: 2023-02-25 23:49:31
-tags: Python,Line,Discord,Slack
+tags:
+- Python
+- Line
+- Discord
+- Slack
 categories: Python
 ---
 

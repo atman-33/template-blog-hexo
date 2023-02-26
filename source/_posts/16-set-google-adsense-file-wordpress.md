@@ -1,7 +1,9 @@
 ---
 title: 【WordPress】Google AdSenseのads.txt設置方法
 date: 2023-02-26 00:29:26
-tags: WordPress,GoogleAdSense
+tags:
+- WordPress
+- GoogleAdSense
 categories: WordPress
 ---
 

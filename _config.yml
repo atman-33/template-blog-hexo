@@ -3,8 +3,8 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Computing Atmman
-subtitle: コンピューティング Atman
+title: Computing Atman
+subtitle: コンピューティング アートマン
 description: IT関連の情報を発信します。
 keywords: システム,プログラミング,コンピューティング
 author: Atman
@@ -13,8 +13,8 @@ timezone: Asia/Tokyo
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://atman-33.github.io/computing-atman/
-root: /computing-atman/
+url: https://www.computing-atman.com/
+root: / # GitHubを利用する場合、カスタムドメインを利用しない場合は、このrootにトップフォルダ名を記載する by Atman
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -106,3 +106,6 @@ deploy:
   type: git
   repo: https://github.com/atman-33/computing-atman.git
   branch: gh-pages
+
+sitemap:
+  path: sitemap.xml

@@ -1,7 +1,10 @@
 ---
 title: 【VBA】ExcelからSQL Plusを実行してセッション切断
 date: 2023-02-26 00:14:41
-tags: Excel,VBA,SQL Plus
+tags:
+- Excel
+- VBA
+- SQL Plus
 categories: VBA
 ---
 
@@ -53,7 +56,7 @@ ___
 ### ①ModuleSqlPlus
 SQL Plus からSQLを実行するために必要な関数を格納しています。
 
-```
+```vb:ModuleSqlPlus
 Option Explicit
 
 ' ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----

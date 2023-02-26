@@ -1,7 +1,9 @@
 ---
 title: 【WSF】複数のVBSをまとめて読み込んで処理を実行（bat,wsf,vbs連携）
 date: 2023-02-25 16:58:13
-tags: WSF,VBS
+tags:
+- WSF
+- VBS
 categories: VBS
 ---
 
@@ -99,7 +101,7 @@ wsfファイルはXML形式で記載します。
         csvText = objDBOracle.getCSVTextFromRS()                ' レコードセットをCSV形式のテキストに変換
 
         writeFile CSV_FOLDER_PATH & "\" & GetBaseName(strSQLFile), csvText, "csv"   ' CSVファイル生成
-    Next 
+    Next
 
     ' 4. DB切断
     objDBOracle.closeDB

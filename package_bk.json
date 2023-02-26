@@ -1,3 +1,6 @@
+# hexo-tag-asset-res をロードする際にエラーが発生するため削除したため、
+# package.jsonファイルの元ファイルをbk（バックアップ用）に保管 by Atman
+
 {
   "name": "hexo-site",
   "version": "0.0.0",
@@ -28,6 +31,7 @@
     "hexo-renderer-marked": "^6.0.0",
     "hexo-renderer-stylus": "^2.1.0",
     "hexo-server": "^3.0.0",
+    "hexo-tag-asset-res": "^0.1.2",
     "hexo-theme-landscape": "^0.0.3"
   }
 }

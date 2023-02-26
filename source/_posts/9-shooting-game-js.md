@@ -1,9 +1,11 @@
 ---
 title: 【JavaScript】CreateJSとクラスを用いたシューティングゲームのサンプル
 date: 2023-02-25 20:49:17
-tags: JavaScript,シューティングゲーム
+tags:
+- JavaScript
+- シューティングゲーム
 categories: JavaScript
-thumbnail: /computing-atman/img/thumbnails/thumbnail-9.png
+thumbnail: /img/thumbnails/thumbnail-9.png
 ---
 
 CreateJSとクラス（ オブジェクト指向 ）を用いた『シューティングゲーム』を作成してみました。
