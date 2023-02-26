@@ -76,7 +76,7 @@ csv_folder=csv
 このiniファイルの情報を読み込んで、VBSスクリプト上で扱えるよう変数に格納しておきます。
 詳細は別記事にしていますので、参考にして下さい。
 
-[【VBS】iniファイルのデータを取得する](/computing-atman/2023/02/23/3-get-ini-data-vbs/)
+[【VBS】iniファイルのデータを取得する](/2023/02/23/3-get-ini-data-vbs/)
 
 ## Oracle DBに接続
 ここでは、Oracle DB の各操作に必要な関数を用意しておきます。

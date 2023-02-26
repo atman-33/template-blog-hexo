@@ -14,7 +14,7 @@ Oracleデータベースを使ったアプリケーションでは、誰かが�
 今回、そのロック状態を解除するため、
 ExcelからSQL Plus を実行してセッションを強制切断（ロック解除）する方法を説明します。
 
-[サンプルのExcelをダウンロード](https://github.com/atman-33/template-excel-vba/raw/5103342cb37b1c925d74e1c2bdb13e9753536cf4/sqlplus%E5%AE%9F%E8%A1%8C_Oracle%E3%82%BB%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3%E5%88%87%E6%96%AD.xlsm)
+[サンプルのExcelをダウンロード](https://github.com/atman-33/template-excel-vba/tree/main/SQLPlus%E5%AE%9F%E8%A1%8C_Oracle%E3%82%BB%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3%E5%88%87%E6%96%AD)
 
 ## 概要
 まず、Oracleがロック状態になっていることを確認してみます。
