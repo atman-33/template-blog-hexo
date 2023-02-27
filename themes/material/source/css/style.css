@@ -181,11 +181,11 @@ a {
     font-size: inherit;
 }
 #post-content h1 {
-    font-size: 2.5em;
+    font-size: 1.8em;
     border-bottom: 1px solid #ddd;
 }
 #post-content h2 {
-    font-size: 2em;
+    font-size: 1.6em;
     border-bottom: 1px solid #eee;
     /* 追記 by Atman */
     background: #eaf5f9;
@@ -204,7 +204,7 @@ a {
     background: #27acd9;
 }
 #post-content h3{
-  font-size:1.5em;
+  font-size:1.4em;
   /* 追記 by Atman */
   background: linear-gradient(transparent 95%, #a7d6ff 70%);
 }
