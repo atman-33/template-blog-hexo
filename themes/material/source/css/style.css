@@ -187,9 +187,26 @@ a {
 #post-content h2 {
     font-size: 2em;
     border-bottom: 1px solid #eee;
+    /* 追記 by Atman */
+    background: #eaf5f9;
+  	padding: 1rem 1rem 1rem 2.5rem;
+  	position: relative;
 }
-#post-content h3 {
-    font-size: 1.5em;
+/* 追記 by Atman */
+#post-content h2:before {
+    position: absolute;
+    top: 20%;
+    left: 20px;
+    width: 6px;
+    height: 60%;
+    content: '';
+    border-radius: 3px;
+    background: #27acd9;
+}
+#post-content h3{
+  font-size:1.5em;
+  /* 追記 by Atman */
+  background: linear-gradient(transparent 95%, #a7d6ff 70%);
 }
 #post-content h4 {
     font-size: 1.2em;
@@ -556,7 +573,9 @@ a {
     align-items: center
 }
 #scheme-Paradox .material-layout .mdl-card__supporting-text strong {
-    font-weight: 700
+    font-weight: 700;
+    color: red;
+    background: linear-gradient(transparent 60%, #ffff66 60%);
 }
 #scheme-Paradox .material-layout .mdl-card__media~.mdl-card__supporting-text {
     min-height: 4pc

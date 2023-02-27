@@ -15,8 +15,7 @@ C#の **WPF Prism** でナビゲート画面の遷移方法について説明し
 
 {% asset_img 1.gif %}
 
-___
-## 対象ファイル
+## 対象ファイル（例）
 
 コーディングが必要なファイルは下記の **A～C** です。
 
@@ -32,11 +31,9 @@ ViewModels/
 App.xaml.cs　･･･C
 ```
 
-___
 ## MainWindowView.xaml（画面遷移元）　･･･A
 
-___
-### 1. ボタンにCommandを追加
+### ①ボタンにCommandを追加
 
 画面遷移元のViewのボタンに対して、CommandにBindingでデリゲートコマンド名称を記載します。
 
@@ -48,19 +45,17 @@ ___
         Command="{Binding SampleNavigationViewButton}"/>
 ```
 
-___
 ## MainWindowViewModel.cs（画面遷移元）　･･･B
-___
-### 2. ViewModelにIRegionManagerの変数を追加
+
+### ②ViewModelにIRegionManagerの変数を追加
 
 画面遷移元のViewModelに、IRegionManagerのプライベート変数を追加し、コンストラクタでセットします。
 
-### 3. ボタン押下時の実行メソッドを追加
+### ③ボタン押下時の実行メソッドを追加
 
 ボタン押下イベントを受け取るデリゲートコマンドのプロパティを追加し、ボタン押下時のExcuteメソッドを実装します。
 
-上記2～3のコード例は下記となります。
-
+▼上記②～③のサンプルコード
 ```
 private IRegionManager _regionManager;  //// 画面遷移（ナビゲーション）
 
@@ -82,10 +77,10 @@ private void SampleNavigationViewButtonExecute()
 }
 ```
 
-___
+
 ## App.xaml.cs　･･･C
-___
-### 4. RegisterTypes内でViewを登録
+
+### ④RegisterTypes内でViewを登録
 
 ```
 protected override void RegisterTypes(IContainerRegistry containerRegistry)
@@ -95,4 +90,4 @@ protected override void RegisterTypes(IContainerRegistry containerRegistry)
 }
 ```
 
-containerRegistry.RegisterForNavigationに設定したViewのみ画面遷移が可能です。
+containerRegistry.RegisterForNavigationに設定したViewが画面遷移可能となります。

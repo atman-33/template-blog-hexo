@@ -65,19 +65,8 @@ var HanabiBrowser = {
 		HanabiBrowser.ref.lineNumber = line_number;
 		$(selector || 'code').each(function(code, element) {
       /* デフォルトでは、& が &amp; に変換されてしまうため、replae(new RegExp('&amp;'...))を追記して対策 by Atman */
-
-			/* 1. 変換して欲しくない文字列を適当な文字列に置換 by Atman*/
-			var ha_code = $(element).html().replace(new RegExp('/// &lt;', 'g'),'__temp1__');
-			var ha_code = ha_code.replace(new RegExp('&gt;&lt;', 'g'),'__temp2__');
-
-			var ha_code = ha_code.replace(new RegExp('&lt;', 'g'),'<').
-											replace(new RegExp('&gt;', 'g'), '>').replace(new RegExp('&amp;', 'g'), '&');
-
-			/* 2. 適当な文字列に置換していた文字列を元に戻す by Atman*/
-			var ha_code = ha_code.replace(new RegExp('__temp1__', 'g'),'/// &lt;');
-			var ha_code = ha_code.replace(new RegExp('__temp2__', 'g'),'&gt;&lt;');
-
-			var ha_code = hanabi(ha_code, HanabiBrowser.ref);
+			var ha_code = hanabi($(element).html().replace(new RegExp('&lt;', 'g'),'<').
+											replace(new RegExp('&gt;', 'g'), '>').replace(new RegExp('&amp;', 'g'), '&'), HanabiBrowser.ref);
 
 			ha_code = ha_code.substring(0, ha_code.length - 1).replace(new RegExp('\n', 'g'), '<br>').
 											replace(new RegExp('  ', 'g'), '&nbsp&nbsp');

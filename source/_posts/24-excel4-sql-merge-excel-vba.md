@@ -41,7 +41,7 @@ ___
 Excelマクロ内の構成は下記となります 。（使用するモジュールのみ記載）
 
 ```
-OracleDB操作2.xlsm
+Template_ver1.x.x.xlsm
 ├標準モジュール
 |   ├modCmnGlbConst
 |   ├modSql   

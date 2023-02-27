@@ -21,7 +21,7 @@ ___
 ___
 #### ③プロジェクトフォルダの全ファイルをインデックスに保存
 
-`git add .`
+`git add -A`
 
 （add した内容の確認）
 
@@ -47,5 +47,7 @@ ___
 #### ⑥Github にプッシュ（originリモートリポジトリ ← masterブランチ）
 
 `git push origin master`
+
+※masterブランチにpushする例です。
 
 以上です。
