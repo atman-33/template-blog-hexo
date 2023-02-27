@@ -52,7 +52,7 @@ namespace Template2.WPF.Services
     /// </summary>
     public class BindingProxy : Freezable
     {
-        /// <summary><summary>
+        /// <summary>
         /// Freezableオブジェクトのインスタンスを生成します。
         /// </summary>
         /// <returns></returns>
