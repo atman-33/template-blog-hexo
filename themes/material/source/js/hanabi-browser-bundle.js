@@ -43,7 +43,16 @@
 				if ("<" === r) return "&lt;";
 				var t;
 				c[r] ? t = c[r] : (t = o[f], c[r] = t);
-				var i = '<span style="color: #' + t + '">' + r + "</span>";
+				/* この部分でスマホブラウザでは、constructor が上手く表示されない。 
+				   #function Object... と表示されてしまう。by Atman */
+				//var i = '<span style="color: #' + t + '">' + r + "</span>";
+				var i;
+				if (r.replace(/^s+|s+$/g,'') == 'constructor') {
+					i = '<span style="color: #">' + "constructor" + "</span>";
+				} else {
+					i = '<span style="color: #' + t + '">' + r + "</span>";
+				}
+				/* 上記部分で、「constructor」が表示される場合を分岐した by Atman */
 				return f = ++f % o.length, i
 			})
 		};
