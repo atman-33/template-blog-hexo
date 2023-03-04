@@ -9,6 +9,12 @@ categories: Git
 ソースコードをGitへpushする手順を残しておきます。
 
 ___
+目次
+<!-- toc -->
+
+___
+
+___
 #### ①プロジェクトのフォルダへ移動（folder_pathは書き換えてください）
 
 `cd folder_path`

@@ -13,6 +13,12 @@ WSFは複数のスクリプトをまとめることが可能なXMLファイル�
 
 [【ソースコードはこちら】](https://github.com/atman-33/template-vbs/tree/master/ExportCsvOracleWsf)
 
+___
+目次
+<!-- toc -->
+
+___
+
 ##  パッケージ構成
 以前、記事にとりあげた[【VBS】Oracle DBからSELECTした結果をCSVファイルに保存](/computing-atman/2023/02/25/5-oracle-db-to-csv-vbs/)と同様の機能を bat、wsf、vbs の組み合わせで実現させていきます。
 

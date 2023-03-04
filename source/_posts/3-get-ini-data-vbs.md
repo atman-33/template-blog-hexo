@@ -6,9 +6,15 @@ categories: VBS
 ---
 
 Config.ini ファイルに格納されたデータを取得する方法を説明します。
-下記のように Config.ini と GetIniData.vbs Config.ini に含まれたデータを読み取ります。
+
+___
+目次
+<!-- toc -->
+
+___
 
 ## フォルダ構造
+下記のように Config.ini と GetIniData.vbs Config.ini に含まれたデータを読み取ります。
 
 ``` bash
 任意のフォルダ

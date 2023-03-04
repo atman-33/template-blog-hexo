@@ -13,6 +13,12 @@ Python でLine、Discord、Slackへ『テキストメッセージ』を送って
 
 [【ソースコードはこちら】](https://github.com/atman-33/notification-python)
 
+___
+目次
+<!-- toc -->
+
+___
+
 ## 概要
 API のトークンや Webhook URL をセットし、テキストを読み込ませることで通知を送る機能を備えています。
 
