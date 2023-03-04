@@ -73,12 +73,12 @@ var HanabiBrowser = {
 	start: function(selector, line_number) {
 		HanabiBrowser.ref.lineNumber = line_number;
 		$(selector || 'code').each(function(code, element) {
-      /* デフォルトでは、& が &amp; に変換されてしまうため、replae(new RegExp('&amp;'...))を追記して対策 by Atman */
 
 			/* 1. 変換して欲しくない文字列を適当な文字列に置換 by Atman*/
 			var ha_code = $(element).html().replace(new RegExp('/// &lt;', 'g'),'__temp1__');
 			var ha_code = ha_code.replace(new RegExp('&gt;&lt;', 'g'),'__temp2__');
 
+			 /* デフォルトでは、& が &amp; に変換されてしまうため、replae(new RegExp('&amp;'...))を追記して対策 by Atman */
 			var ha_code = ha_code.replace(new RegExp('&lt;', 'g'),'<').
 											replace(new RegExp('&gt;', 'g'), '>').replace(new RegExp('&amp;', 'g'), '&');
 
