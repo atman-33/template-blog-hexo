@@ -113,3 +113,9 @@ sitemap:
 search:
     path: search.xml
     field: post
+
+toc:
+  maxdepth: 3
+  class: false
+  slugify: toc
+  decodeEntities: false
