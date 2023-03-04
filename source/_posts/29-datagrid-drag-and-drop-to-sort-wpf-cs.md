@@ -4,12 +4,10 @@ date: 2023-03-02 23:11:39
 tags:
 - C#
 - WPF
-- Prism
 categories: C#
 ---
 
-C#の **WPF Prism** でナビゲート画面の遷移方法について説明します。
-下記のように、DataGridのレコードをドラッグ&ドロップで並び替える処理です。
+C#の **WPF** で、DataGridのレコードをドラッグ&ドロップで並び替える処理を説明します。
 
 {% asset_img 1.gif %}
 
