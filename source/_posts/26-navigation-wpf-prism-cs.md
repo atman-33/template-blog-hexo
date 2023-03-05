@@ -33,9 +33,9 @@ Views/
 
 ViewModels/
  |-MainWindowViewModel.cs（画面遷移元）　･･･B
- |-SampleNavigationViewModel.cs(画面遷移先)
+ |-SampleNavigationViewModel.cs(画面遷移先)　･･･C
 
-App.xaml.cs　･･･C
+App.xaml.cs　･･･D
 ```
 
 ## MainWindowView.xaml（画面遷移元）　･･･A
@@ -84,10 +84,47 @@ private void SampleNavigationViewButtonExecute()
 }
 ```
 
+## SampleNavigationViewModel.cs(画面遷移先)　･･･C
 
-## App.xaml.cs　･･･C
+### ④INavigationAwareインターフェースを実装
+画面遷移先のViewModelに、**INavigationAwareインターフェース** と **IRegionMemberLifetime**を実装します。
 
-### ④RegisterTypes内でViewを登録
+※2023/3/5 追記
+ViewModelインスタンスのメモリ開放のため、IRegionMemberLifetimeインターフェース実装を追加しました。
+
+### ⑤インターフェースのメソッドを変更
+INavigationAwareを実装した事で追加される IsNavigationTarget の 戻り値を true とし、KeepAlive を false にして下さい。そうすれば、画面破棄でメモリが開放されます。
+
+▼上記④～⑤のサンプルコード
+```
+public class SampleTableEditViewModel : BindableBase, INavigationAware, IRegionMemberLifetime
+{
+    /// <summary>
+    /// ViewModel破棄に伴いメモリ開放する際はfalse
+    /// </summary>
+    public bool KeepAlive { get; set; } = false;
+
+    //// 各種処理
+
+    public bool IsNavigationTarget(NavigationContext navigationContext)
+    {
+        //// RegionMemberLifetime(KeepAlive = false)でViewModelを破棄するため、こちらはTrue
+        return true;
+    }
+
+    public virtual void OnNavigatedFrom(NavigationContext navigationContext)
+    {
+    }
+
+    public virtual void OnNavigatedTo(NavigationContext navigationContext)
+    {
+    }
+}
+```
+
+## App.xaml.cs　･･･D
+
+### ⑥RegisterTypes内でViewを登録
 
 ```
 protected override void RegisterTypes(IContainerRegistry containerRegistry)
