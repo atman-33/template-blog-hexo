@@ -109,6 +109,8 @@ deploy:
 
 sitemap:
   path: sitemap.xml
+  tag: true
+  category: true
 
 search:
     path: search.xml
