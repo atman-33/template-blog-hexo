@@ -112,6 +112,19 @@ sitemap:
   tag: true
   category: true
 
+robotstxt:
+  useragent: "*"
+  disallow:
+    - /about/
+    - /gallery/
+    - /privacy-policy/
+    - /archives/
+    - /css/
+    - /img/
+    - /js/
+  allow:
+  sitemap: /sitemap.xml
+
 search:
     path: search.xml
     field: post

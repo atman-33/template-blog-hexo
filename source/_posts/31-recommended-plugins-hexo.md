@@ -30,10 +30,32 @@ npm install hexo-generator-seo-friendly-sitemap --save
 
 _config.ymlに追記
 
-▼Hexoディレクトリ\\_config.yml
+▼Hexoディレクトリ\\_config.yml（設定例）
 ```
 sitemap:
   path: sitemap.xml
   tag: true
   category: true
+```
+
+### robots.txt生成
+
+```
+pm install hexo-generator-robotstxt --save
+```
+
+▼Hexoディレクトリ\\_config.yml（設定例）
+```
+robotstxt:
+  useragent: "*"
+  disallow:
+    - /about/
+    - /gallery/
+    - /privacy-policy/
+    - /archives/
+    - /css/
+    - /img/
+    - /js/
+  allow:
+  sitemap: /sitemap.xml
 ```
