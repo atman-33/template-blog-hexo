@@ -58,7 +58,7 @@ npm install -g hexo-cli
 npx hexo init {Hexoブログ用ディレクトリ}
 
 例）
-npm hexo init C:\hexo-blog
+npx hexo init C:\hexo-blog
 ```
 
 Hexoブログ用の各種ディレクトリが生成されていれば完了です。
