@@ -87,7 +87,7 @@ private void SampleNavigationViewButtonExecute()
 ## SampleNavigationViewModel.cs(画面遷移先)　･･･C
 
 ### ④INavigationAwareインターフェースを実装
-画面遷移先のViewModelに、**INavigationAwareインターフェース** と **IRegionMemberLifetime**を実装します。
+画面遷移先のViewModelに、**INavigationAwareインターフェース** と **IRegionMemberLifetimeインターフェース**を実装します。
 
 ※2023/3/5 追記
 ViewModelインスタンスのメモリ開放のため、IRegionMemberLifetimeインターフェース実装を追加しました。
