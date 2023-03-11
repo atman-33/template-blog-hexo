@@ -19,7 +19,7 @@ hexo new post “XXX”
 hexo generate
 
 # サーバー起動
-hexo server
+hexo server -g
 
 # ローカルサーバー画面を確認
 http://localhost:4000
