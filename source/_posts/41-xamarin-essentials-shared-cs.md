@@ -1,5 +1,5 @@
 ---
-title: 【C#】Android端末のXamarin.Essentials実装方法（config.xmlの代替）
+title: 【C#】Xamarin Android端末のXamarin.Essentials実装方法（config.xmlの代替）
 date: 2023-03-29 20:54:45
 tags:
 - C#
