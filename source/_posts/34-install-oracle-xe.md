@@ -191,7 +191,7 @@ C:\oracle\product\21c\homes\OraDB21Home1\network\admin\sqlnet.ora
 TNS-03505: 名前の解決に失敗しました。
 ```
 
-上記の**sqlnet.oraファイルの保存ディレクトリに、tnsping.oraも保存**されています。
+上記の**sqlnet.oraファイルの保存ディレクトリに、tnsnames.oraも保存**されています。
 ___
 
 tnsnames.oraの最後に、以下の記述を追加します。
