@@ -1,0 +1,16 @@
+{
+    "name": "neumorphism-hexo-theme",
+    "version": "1.0.0",
+    "description": "A neumorphism-style theme for Hexo",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Your Name",
+    "license": "MIT",
+    "dependencies": {
+      "hexo": "^5.4.0",
+      "hexo-renderer-sass": "^1.0.1"
+    }
+  }
+  

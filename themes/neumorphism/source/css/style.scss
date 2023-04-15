@@ -1,0 +1,98 @@
+$primary-color: #bdc3c7;
+$secondary-color: #ecf0f1;
+$background-color: #ecf0f1;
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: $background-color;
+}
+
+.neumorphism {
+  background-color: $background-color;
+  box-shadow: -8px -8px 16px #bdc3c7, 8px 8px 16px #ecf0f1;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+
+  nav {
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+
+      li {
+        margin-right: 20px;
+
+        a {
+          color: $primary-color;
+          text-decoration: none;
+
+          &:hover {
+            color: $secondary-color;
+          }
+        }
+      }
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: bold;
+    color: $primary-color;
+  }
+
+  .post-meta {
+    color: $secondary-color;
+    font-size: 14px;
+    margin-bottom: 10px;
+
+    span:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  .post-excerpt {
+    color: $primary-color;
+    margin-top: 10px;
+  }
+
+  .page-content {
+    color: $primary-color;
+    line-height: 1.5;
+  }
+
+  input[type="text"], input[type="email"], textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: inset -2px -2px 5px #bdc3c7, inset 2px 2px 5px #ecf0f1;
+    background-color: $background-color;
+    color: $primary-color;
+
+    &:focus {
+      outline: none;
+      box-shadow: inset -4px -4px 10px #bdc3c7, inset 4px 4px 10px #ecf0f1;
+    }
+  }
+
+  button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: -2px -2px 5px #bdc3c7, 2px 2px 5px #ecf0f1;
+    background-color: $background-color;
+    color: $primary-color;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: -4px -4px 10px #bdc3c7, 4px 4px 10px #ecf0f1;
+    }
+
+    &:active {
+      box-shadow: inset -2px -2px 5px #bdc3c7, inset 2px 2px 5px #ecf0f1;
+    }
+  }
+}
