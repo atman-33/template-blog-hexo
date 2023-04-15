@@ -43,7 +43,7 @@ https://www.oracle.com/jp/database/technologies/xe-downloads.html
 
 ダウンロードした「OracleXE213_Win64.zip」ファイルを解凍します。
 
-解凍して作成されたフォルダ内の「setup.exe」を実行します。
+解凍して作成されたフォルダ内の「setup.exe」を**管理者として**実行します。
 
 「次へ」ボタン押下、「使用許諾条項の受け入れ」にチェックを入れて進めます。
 
