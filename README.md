@@ -2,6 +2,9 @@
 
 The template of Material Design Blog by Hexo
 
+[View the demo](https://atman-33.github.io/template-blog-hexo/)  
+![image](./themes/material/source/img/program-2.png)
+
 # Installation
 
 Ensure you have [Node.js](https://nodejs.org) installed.
