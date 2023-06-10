@@ -1,4 +1,12 @@
-【Github管理方法】
+# 環境構築
+
+1. Node.jsをインストール  
+2. Hexo をインストール  
+```
+npm install hexo-cli -g
+```
+
+# 【Github管理方法】
 ブランチ
 ・master     ：ブログ生成用のコードを保存
 ・gh-pages   ：Web公開用のコードを保存
