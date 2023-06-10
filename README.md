@@ -1,2 +1,3 @@
-# computing-atman
-システム、プログラミング関連の情報ブログ
+# Template blog Hexo
+
+The template of Material Design Blog by Hexo

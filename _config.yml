@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Computing Atman
+title: Computing Atman（Hexo ver）
 subtitle: コンピューティング アートマン
 description: IT関連の情報を発信します。
 keywords: システム,プログラミング,コンピューティング
@@ -105,7 +105,7 @@ theme: material
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/atman-33/computing-atman.git
+  repo: https://github.com/atman-33/template-blog-hexo.git
   branch: gh-pages
 
 sitemap:
