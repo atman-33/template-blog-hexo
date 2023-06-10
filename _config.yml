@@ -13,8 +13,8 @@ timezone: Asia/Tokyo
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://atman-33.github.io/template-blog-hexo
-root: /public # GitHubを利用する場合、カスタムドメインを利用しない場合は、このrootにトップフォルダ名を記載する by Atman
+url: https://atman-33.github.io/template-blog-hexo/
+root: /template-blog-hexo/ # GitHubを利用する場合、カスタムドメインを利用しない場合は、このrootにトップフォルダ名を記載する by Atman
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
