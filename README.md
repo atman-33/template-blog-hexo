@@ -2,7 +2,7 @@
 
 The template of Material Design Blog by Hexo
 
-[View the demo](https://atman-33.github.io/template-blog-hexo/)  
+[View the demo](https://atman-33.github.io/hexo-material-blog-template/)  
 ![image](./themes/material/source/img/program-2.png)
 
 # Installation

@@ -5,10 +5,10 @@ tags:
 - Hexo
 - マテリアルデザイン
 categories: Hexo
-thumbnail: /template-blog-hexo/img/thumbnails/thumbnail-30.png
+thumbnail: /hexo-material-blog-template/img/thumbnails/thumbnail-30.png
 ---
 
-[GitHub Source](https://github.com/atman-33/template-blog-hexo)
+[GitHub Source](https://github.com/atman-33/hexo-material-blog-template)
 
 ブログをWordpressからHexoに変更し、material テーマを適用しました。
 material テーマは、Gogleが推奨しているマテリアルデザインをベースとした美しいデザインです。

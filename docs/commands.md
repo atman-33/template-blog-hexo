@@ -39,7 +39,7 @@ hexo deploy -g
 # publicフォルダにCNAMEファイルを保存すること！
 
 # 公開サーバー画面を確認
-https://atman-33.github.io/template-blog-hexo/
+https://atman-33.github.io/hexo-material-blog-template/
 
 
 #### #### #### #### #### #### #### #### #### #### #### #### #### #### ####
