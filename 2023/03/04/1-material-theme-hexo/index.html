@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="ja">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.6 -->
+    <script>
+        window.materialVersion = "1.5.6"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0',
+            '1.5.2',
+            '1.5.5'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+
+
+
+
+    <link rel="dns-prefetch" href="https://www.google-analytics.com"/>
+
+
+
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com"/>
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+            【Hexo】マテリアル（material）テーマの適用・設定方法 | 
+        
+        Computing Atman（Hexo ver）
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/hexo-material-blog-template/img/favicon.png">
+    <link rel="icon" href="/hexo-material-blog-template/img/favicon.png">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="IT関連の情報を発信します。">
+    <meta name="keywords" content=",Hexo,マテリアルデザイン">
+    <meta name="theme-color" content="#0097A7">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.en.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/hexo-material-blog-template/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/hexo-material-blog-template/css/style.min.css?RiHGTQC4qFsypV0BRuEQ0Q==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: 'Meiryo UI', メイリオ, Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #00838F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #0097A7 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #0097A7 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #0097A7 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/hexo-material-blog-template/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/hexo-material-blog-template/js/jquery.min.js?qcusAULNeBksqffqUM2+Ig==", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Computing Atman（Hexo ver）">
+    <meta name="msapplication-starturl" content="https://github.com/atman-33/hexo-material-blog-template/hexo-material-blog-template/2023/03/04/1-material-theme-hexo/">
+    <meta name="msapplication-navbutton-color" content="#0097A7">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Computing Atman（Hexo ver）">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/hexo-material-blog-template/img/favicon.png">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="https://github.com/atman-33/hexo-material-blog-template/hexo-material-blog-template/2023/03/04/1-material-theme-hexo/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="【Hexo】マテリアル（material）テーマの適用・設定方法 | Computing Atman（Hexo ver）">
+    <meta property="og:image" content="/hexo-material-blog-template/img/favicon.png">
+    <meta property="og:description" content="IT関連の情報を発信します。">
+    <meta property="og:article:tag" content="Hexo"> <meta property="og:article:tag" content="マテリアルデザイン"> 
+
+    
+        <meta property="article:published_time" content="Sat Mar 04 2023 17:53:26 GMT+0900">
+        <meta property="article:modified_time" content="Tue Jun 20 2023 00:07:07 GMT+0900">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="https://github.com/atman-33/hexo-material-blog-template/hexo-material-blog-template/2023/03/04/1-material-theme-hexo/index.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://github.com/atman-33/hexo-material-blog-template/hexo-material-blog-template/2023/03/04/1-material-theme-hexo/index.html",
+    "headline": "【Hexo】マテリアル（material）テーマの適用・設定方法",
+    "datePublished": "Sat Mar 04 2023 17:53:26 GMT+0900",
+    "dateModified": "Tue Jun 20 2023 00:07:07 GMT+0900",
+    "author": {
+        "@type": "Person",
+        "name": "Atman",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "IT、プログラミング情報サイト"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Computing Atman（Hexo ver）",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": ",Hexo,マテリアルデザイン",
+    "description": "IT関連の情報を発信します。"
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+        <!-- 下記のデフォルトスクリプトは利用せず、直接タグを記載する事とした。by Atman
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'G-1W91JVY5LN', 'auto');ga('send', 'pageview');
+</script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1W91JVY5LN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1W91JVY5LN');
+</script>
+
+<!-- Google AdSense Code -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3632222360837456"
+     crossorigin="anonymous"></script>
+
+    
+    
+    
+
+    <!-- Custom Head -->
+    
+
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/hexo-material-blog-template/atom.xml" title="Computing Atman（Hexo ver）" type="application/atom+xml">
+</head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span id="MD-burger-id" class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link"><span class="post-toc-number">1.</span> <span class="post-toc-text">前提</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link"><span class="post-toc-number">2.</span> <span class="post-toc-text">Hexo環境構築</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">Node.jsをインストール</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">Hexoをインストール</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">Hexoの環境構築</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link"><span class="post-toc-number">3.</span> <span class="post-toc-text">material テーマ環境構築</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">material テーマをダウンロード</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">material テーマを設定</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link"><span class="post-toc-number">4.</span> <span class="post-toc-text">Hexo&#x2F;material の config 設定</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">言語設定</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link"><span class="post-toc-number">4.2.</span> <span class="post-toc-text">記事に対応した画像保存用フォルダ</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link"><span class="post-toc-number">4.3.</span> <span class="post-toc-text">ブログのアイコン・画像</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link"><span class="post-toc-number">4.4.</span> <span class="post-toc-text">SEOを最適化</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link"><span class="post-toc-number">4.5.</span> <span class="post-toc-text">スローガンと背景色</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link"><span class="post-toc-number">4.6.</span> <span class="post-toc-text">ページのJavaScriptエフェクト</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link"><span class="post-toc-number">4.7.</span> <span class="post-toc-text">投稿ページ要旨の単語数</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link"><span class="post-toc-number">4.8.</span> <span class="post-toc-text">投稿ページのサムネイル</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link"><span class="post-toc-number">4.9.</span> <span class="post-toc-text">フォント</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link"><span class="post-toc-number">4.10.</span> <span class="post-toc-text">コードブロックの強調表示</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link"><span class="post-toc-number">4.11.</span> <span class="post-toc-text">SNS設定</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link"><span class="post-toc-number">4.12.</span> <span class="post-toc-text">サイドバー設定</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link"><span class="post-toc-number">4.13.</span> <span class="post-toc-text">タグページ作成</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link"><span class="post-toc-number">4.14.</span> <span class="post-toc-text">リンクページ作成</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link"><span class="post-toc-number">4.15.</span> <span class="post-toc-text">問い合わせページ作成</span></a></li></ol></li></ol>
+    </ul>
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        <!-- Custom Thumbnail -->
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(/hexo-material-blog-template/img/thumbnails/thumbnail-30.png)">
+    
+            <p class="article-headline-p">
+                【Hexo】マテリアル（material）テーマの適用・設定方法
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/hexo-material-blog-template/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Atman</strong>
+        <span>3月 04, 2023</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-none-link" href="/hexo-material-blog-template/tags/Hexo/" rel="tag">Hexo</a></li><li class="mdl-menu__item"><a class="post_tag-none-link" href="/hexo-material-blog-template/tags/%E3%83%9E%E3%83%86%E3%83%AA%E3%82%A2%E3%83%AB%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3/" rel="tag">マテリアルデザイン</a>
+    </ul>
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=【Hexo】マテリアル（material）テーマの適用・設定方法&url=https://github.com/atman-33/hexo-material-blog-template/hexo-material-blog-template/2023/03/04/1-material-theme-hexo/index.html&via=Atman" target="_blank">
+            <li class="mdl-menu__item">
+                Twitter での共有
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://github.com/atman-33/hexo-material-blog-template/hexo-material-blog-template/2023/03/04/1-material-theme-hexo/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                Facebook での共有
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://github.com/atman-33/hexo-material-blog-template/hexo-material-blog-template/2023/03/04/1-material-theme-hexo/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                Google+ での共有
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+    
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p><a href="https://github.com/atman-33/hexo-material-blog-template">GitHub Source</a></p>
+<p>ブログをWordpressからHexoに変更し、material テーマを適用しました。<br>material テーマは、Gogleが推奨しているマテリアルデザインをベースとした美しいデザインです。</p>
+<p>HexoはテーマをGithubからダウンロードして実装しますが、material テーマにはバグが残っており、そのまま利用する事が出来ませんでした。</p>
+<p>今回、material テーマ適用に必要な修正版のテーマファイル提供と設定手順を記載しておきます。</p>
+<p><img src="/hexo-material-blog-template/2023/03/04/1-material-theme-hexo/1.png" alt="image"></p>
+<hr>
+<p>目次</p>
+<!-- toc -->
+
+<ul>
+<li><a href="#%E5%89%8D%E6%8F%90">前提</a></li>
+<li><a href="#hexo%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89">Hexo環境構築</a><ul>
+<li><a href="#nodejs%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB">Node.jsをインストール</a></li>
+<li><a href="#hexo%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB">Hexoをインストール</a></li>
+<li><a href="#hexo%E3%81%AE%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89">Hexoの環境構築</a></li>
+</ul>
+</li>
+<li><a href="#material-%E3%83%86%E3%83%BC%E3%83%9E%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89">material テーマ環境構築</a><ul>
+<li><a href="#material-%E3%83%86%E3%83%BC%E3%83%9E%E3%82%92%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89">material テーマをダウンロード</a></li>
+<li><a href="#material-%E3%83%86%E3%83%BC%E3%83%9E%E3%82%92%E8%A8%AD%E5%AE%9A">material テーマを設定</a></li>
+</ul>
+</li>
+<li><a href="#hexomaterial-%E3%81%AE-config-%E8%A8%AD%E5%AE%9A">Hexo&#x2F;material の config 設定</a><ul>
+<li><a href="#%E8%A8%80%E8%AA%9E%E8%A8%AD%E5%AE%9A">言語設定</a></li>
+<li><a href="#%E8%A8%98%E4%BA%8B%E3%81%AB%E5%AF%BE%E5%BF%9C%E3%81%97%E3%81%9F%E7%94%BB%E5%83%8F%E4%BF%9D%E5%AD%98%E7%94%A8%E3%83%95%E3%82%A9%E3%83%AB%E3%83%80">記事に対応した画像保存用フォルダ</a></li>
+<li><a href="#%E3%83%96%E3%83%AD%E3%82%B0%E3%81%AE%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3%E7%94%BB%E5%83%8F">ブログのアイコン・画像</a></li>
+<li><a href="#seo%E3%82%92%E6%9C%80%E9%81%A9%E5%8C%96">SEOを最適化</a></li>
+<li><a href="#%E3%82%B9%E3%83%AD%E3%83%BC%E3%82%AC%E3%83%B3%E3%81%A8%E8%83%8C%E6%99%AF%E8%89%B2">スローガンと背景色</a></li>
+<li><a href="#%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%AEjavascript%E3%82%A8%E3%83%95%E3%82%A7%E3%82%AF%E3%83%88">ページのJavaScriptエフェクト</a></li>
+<li><a href="#%E6%8A%95%E7%A8%BF%E3%83%9A%E3%83%BC%E3%82%B8%E8%A6%81%E6%97%A8%E3%81%AE%E5%8D%98%E8%AA%9E%E6%95%B0">投稿ページ要旨の単語数</a></li>
+<li><a href="#%E6%8A%95%E7%A8%BF%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%AE%E3%82%B5%E3%83%A0%E3%83%8D%E3%82%A4%E3%83%AB">投稿ページのサムネイル</a></li>
+<li><a href="#%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88">フォント</a></li>
+<li><a href="#%E3%82%B3%E3%83%BC%E3%83%89%E3%83%96%E3%83%AD%E3%83%83%E3%82%AF%E3%81%AE%E5%BC%B7%E8%AA%BF%E8%A1%A8%E7%A4%BA">コードブロックの強調表示</a></li>
+<li><a href="#sns%E8%A8%AD%E5%AE%9A">SNS設定</a></li>
+<li><a href="#%E3%82%B5%E3%82%A4%E3%83%89%E3%83%90%E3%83%BC%E8%A8%AD%E5%AE%9A">サイドバー設定</a></li>
+<li><a href="#%E3%82%BF%E3%82%B0%E3%83%9A%E3%83%BC%E3%82%B8%E4%BD%9C%E6%88%90">タグページ作成</a></li>
+<li><a href="#%E3%83%AA%E3%83%B3%E3%82%AF%E3%83%9A%E3%83%BC%E3%82%B8%E4%BD%9C%E6%88%90">リンクページ作成</a></li>
+<li><a href="#%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B%E3%83%9A%E3%83%BC%E3%82%B8%E4%BD%9C%E6%88%90">問い合わせページ作成</a></li>
+</ul>
+</li>
+</ul>
+<!-- tocstop -->
+
+<hr>
+<h2><span id="前提">前提</span></h2><ul>
+<li>OS:Windows</li>
+</ul>
+<h2><span id="hexo環境構築">Hexo環境構築</span></h2><h3><span id="nodejsをインストール">Node.jsをインストール</span></h3><p>Hexoをインストールするための <strong>npmコマンド</strong> を使えるようにする必要があります。<br>そのために、まずはNode.jsをインストールします。</p>
+<p>下記リンク先から <strong>Node.jsをダウンロード</strong> して下さい。</p>
+<p><a target="_blank" rel="noopener" href="https://nodejs.org/ja/">https://nodejs.org/ja/</a></p>
+<p>次に、ダウンロードした<strong>Windows Installer(.msi)をダブルクリックしてインストール</strong>します。</p>
+<h3><span id="hexoをインストール">Hexoをインストール</span></h3><p>コマンドプロンプトで以下を実行します。</p>
+<pre><code>npm install hexo-cli -g
+</code></pre>
+<p>これで、<strong>Hexoのインストール完了</strong>です。</p>
+<h3><span id="hexoの環境構築">Hexoの環境構築</span></h3><p>Hexo用のディレクトリ（フォルダ）を準備します。<br>例として<code>「C:\hexo-blog」</code>をHexo用ディレクトリとします。</p>
+<p>コマンドプロンプトで<code>init</code>を実行し、サイト用のフォルダを生成します。</p>
+<pre><code>npx hexo init Hexo用ディレクトリ
+
+例）
+npx hexo init C:\hexo-blog
+</code></pre>
+<p><code>cd Hexo用ディレクトリ</code>で移動し、</p>
+<pre><code>npm install
+</code></pre>
+<p>Hexoブログ用の各種ディレクトリが生成されていれば完了です。</p>
+<h2><span id="material-テーマ環境構築">material テーマ環境構築</span></h2><h3><span id="material-テーマをダウンロード">material テーマをダウンロード</span></h3><p><a href="https://github.com/iblh/hexo-theme-material">オリジナル</a>はバグが残っていますので、修正版をダウンロードして下さい。</p>
+<p>↓修正版<br><a href="https://github.com/atman-33/hexo-theme-material">https://github.com/atman-33/hexo-theme-material</a></p>
+<p>Code &gt; Download ZIP でzipファイルをダウンロードします。<br><img src="/hexo-material-blog-template/2023/03/04/1-material-theme-hexo/2.png" alt="image"></p>
+<p>ダウンロードが完了すれば、zipを解凍し、中身をHexo用ディレクトリ直下の<strong>themes&#x2F;materialフォルダ</strong>に格納します。</p>
+<pre><code>Hexo用ディレクトリ\
+|-themes\
+   |-material\
+      ↑この中にzipファイルの中身が保存されていればOK
+</code></pre>
+<p><img src="/hexo-material-blog-template/2023/03/04/1-material-theme-hexo/3.png" alt="image"></p>
+<h3><span id="material-テーマを設定">material テーマを設定</span></h3><p>次に、material テーマ を読み込むように修正します。<br>Hexo用ディレクトリ内の「_config.yml」を テキストエディタ で開き、theme を material に変更します。</p>
+<p>▼Hexo用ディレクトリ&#x2F;_config.yml<br><img src="/hexo-material-blog-template/2023/03/04/1-material-theme-hexo/4.png" alt="image"></p>
+<p>この時点でHexoブログをローカルサーバーで確認可能です。<br>確認するには、コマンドプロンプトで以下を実行します。</p>
+<pre><code>cd Hexo用ディレクトリ
+hexo server -g
+</code></pre>
+<p>ブラウザでURLに<code>「http://localhost:4000」</code>を入力すれば、Hexoブログを確認できます。</p>
+<h2><span id="hexox2fmaterial-の-config-設定">Hexo&#x2F;material の config 設定</span></h2><p>Hexo 及び material テーマは初期設定のままでは扱い辛いため、設定を変更します。</p>
+<p>Hexo用ディレクトリ内には、2つの_config.ymlファイルが存在します。<br>説明時にどちらの_config.ymlを示しているのか明確にするため、ここからは以下の名称で記載する事とします。</p>
+<ul>
+<li>①ルート_config.yml</li>
+<li>②テーマ_config.yml</li>
+</ul>
+<pre><code>Hexo用ディレクトリ\
+|-_config.ml・・・①ルート_config.yml
+|-themes\
+   |-material
+      |-_config.yml・・・②テーマ_config.yml
+</code></pre>
+<h3><span id="言語設定">言語設定</span></h3><p>Hexo用ディレクトリから、テキストエディタで ルート_config.yml ファイルの language プロパティを設定します。</p>
+<p>▼ルート_config.yml<br><img src="/hexo-material-blog-template/2023/03/04/1-material-theme-hexo/5.png" alt="image"></p>
+<p>language を ja にして、日本語にします。</p>
+<h3><span id="記事に対応した画像保存用フォルダ">記事に対応した画像保存用フォルダ</span></h3><p>ルート_config.yml の post_asset_folder の値を変更しておきます。</p>
+<p><code>post_asset_folder: </code><strong><code>true</code></strong></p>
+<p>post_asset_folder の値を true にすると、_postフォルダ直下に新規記事作成時に記事に対応したフォルダが自動的に生成されます。<br>記事で使用する画像を、そのフォルダに保存しておけば、記事中に参照する事が可能です。</p>
+<p>▼記事内でassetフォルダの画像を読み込む場合の記述</p>
+<pre><code>&#123;% asset_img 画像ファイル名.jpg %&#125;
+</code></pre>
+<h3><span id="ブログのアイコン画像">ブログのアイコン・画像</span></h3><p>ここからは、テーマ_configy.ymlを設定していきます。<br>ブログのアイコンや画像は以下の部分で設定しています。</p>
+<p>▼テーマ_config.yml<br><img src="/hexo-material-blog-template/2023/03/04/1-material-theme-hexo/6.png" alt="image"></p>
+<p>▼テーマ_config.yml<br><img src="/hexo-material-blog-template/2023/03/04/1-material-theme-hexo/7.png" alt="image"></p>
+<p>参照元の画像ファイル置場は下記にありますので、必要に応じて修正します。<br><strong><code>Hexo用\themes\material\source\img</code></strong></p>
+<h3><span id="seoを最適化">SEOを最適化</span></h3><p>この設定を有効にすると、構造化データがページのヘッダーに生成され、Google などの検索エンジンの SEO を改善するのに役立ちます。<br>ただし、<code>hexo g</code> に 問題がある場合は <code>false</code> に設定してみてください。</p>
+<p>▼テーマ_config.yml<br><img src="/hexo-material-blog-template/2023/03/04/1-material-theme-hexo/8.png" alt="image"></p>
+<h3><span id="スローガンと背景色">スローガンと背景色</span></h3><p>スローガン（トップページの概要文）と背景色は下記から設定します。</p>
+<p>▼テーマ_config.yml<br><img src="/hexo-material-blog-template/2023/03/04/1-material-theme-hexo/9.png" alt="image"></p>
+<h3><span id="ページのjavascriptエフェクト">ページのJavaScriptエフェクト</span></h3><p>▼テーマ_config.yml<br><img src="/hexo-material-blog-template/2023/03/04/1-material-theme-hexo/10.png" alt="image"></p>
+<h3><span id="投稿ページ要旨の単語数">投稿ページ要旨の単語数</span></h3><p>▼テーマ_config.yml<br><img src="/hexo-material-blog-template/2023/03/04/1-material-theme-hexo/11.png" alt="image"></p>
+<h3><span id="投稿ページのサムネイル">投稿ページのサムネイル</span></h3><p>material テーマは 19 枚のシンプルな画像が準備されています。投稿ページにサムネイルが定義されていない場合、テーマはランダムフォルダ（ディレクトリ\themes\material\source\img\random）からランダムに写真を選択します。</p>
+<p>ランダムに表示する画像数は下記から設定します。</p>
+<p>▼テーマ_config.yml<br><img src="/hexo-material-blog-template/2023/03/04/1-material-theme-hexo/12.png" alt="image"></p>
+<p>投稿ページにサムネイルを設定する場合は、投稿ページのmdファイルの上部に<strong>thumbnail</strong>を設定すればOKです。<br>サンプルは下記となります。</p>
+<p>▼投稿ページのファイル.md<br><img src="/hexo-material-blog-template/2023/03/04/1-material-theme-hexo/13.png" alt="image"></p>
+<p>上記の例では、「Hexo用ディレクトリ\themes\material\source\img\thumbnails」フォルダを作成し、そこに保存したファイルをサムネイルとして利用しています。</p>
+<h3><span id="フォント">フォント</span></h3><p>フォントは、初期設定だと日本語の見栄えが良くなかったため、下記のように変更しました。</p>
+<p>▼テーマ_config.yml<br><img src="/hexo-material-blog-template/2023/03/04/1-material-theme-hexo/14.png" alt="image"></p>
+<h3><span id="コードブロックの強調表示">コードブロックの強調表示</span></h3><p>material テーマは、2 種類のコードの強調表示を提供しています。</p>
+<ul>
+<li>prettify</li>
+<li>hanabi</li>
+</ul>
+<p>上記を有効にするには、ルート_config.yml 内のコードの強調表示をオフにする必要があります。（そうしなければ競合してしまいます。）</p>
+<p>以下は、habani の設定例です。</p>
+<p>▼ルート_config.yml<br><img src="/hexo-material-blog-template/2023/03/04/1-material-theme-hexo/15.png" alt="image"></p>
+<p>▼テーマ_config.yml<br><img src="/hexo-material-blog-template/2023/03/04/1-material-theme-hexo/16.png" alt="image"></p>
+<p>hanabi 表示効果のサンプルを載せてきます。<br><img src="/hexo-material-blog-template/2023/03/04/1-material-theme-hexo/17.png" alt="image"></p>
+<h3><span id="sns設定">SNS設定</span></h3><p>必要無いリンクは空白でOKです。</p>
+<p>▼テーマ_config.yml<br><img src="/hexo-material-blog-template/2023/03/04/1-material-theme-hexo/18.png" alt="image"></p>
+<h3><span id="サイドバー設定">サイドバー設定</span></h3><p>サイドバーをカスタマイズします。</p>
+<p>▼テーマ_config.yml<br><img src="/hexo-material-blog-template/2023/03/04/1-material-theme-hexo/19.png" alt="image"></p>
+<p>この設定の場合、下記のように表示されます。</p>
+<p><img src="/hexo-material-blog-template/2023/03/04/1-material-theme-hexo/20.png" alt="image"></p>
+<p>アイコンは、<u>Google の Material Icon</u> を利用しています。<br>　↓<br><a target="_blank" rel="noopener" href="https://fonts.google.com/icons?icon.set=Material+Icons">https://fonts.google.com/icons?icon.set=Material+Icons</a></p>
+<p>利用したいアイコンを見つけて、サイドバーの「icon: <strong>ココ</strong>」に設定して下さい。</p>
+<p><strong>※Google の material icon が全て利用できるわけではなく、表示が反映されないアイコンもあります</strong>のでご注意下さい。理由は不明です。</p>
+<p>サイドバーの「タグ」・「リンク」・「問い合わせ」は専用のページを作成する必要があります。方法は後述します。</p>
+<h3><span id="タグページ作成">タグページ作成</span></h3><p>▼テーマ_config.yml<br><img src="/hexo-material-blog-template/2023/03/04/1-material-theme-hexo/21.png" alt="image"></p>
+<p>コマンドプロンプトを開き、Hexo用ディレクトリに移動して、以下のように入力します。</p>
+<p>▼コマンドプロンプト</p>
+<pre><code>cd Hexo用ディレクトリ
+hexo new page &quot;tags&quot;
+</code></pre>
+<p><code>Hexo用ディレクトリ\source\tags</code> フォルダ内の <code>index.md</code> ファイルを、以下のように編集します。</p>
+<p>▼Hexo用ディレクトリ\source\tags\index.md</p>
+<pre><code>---
+title: tags
+date: 2023-02-26 15:50:54
+layout: tags
+---
+</code></pre>
+<p><strong><code>layout: tags</code> が必須</strong>です。</p>
+<h3><span id="リンクページ作成">リンクページ作成</span></h3><p>▼テーマ_config.yml<br><img src="/hexo-material-blog-template/2023/03/04/1-material-theme-hexo/22.png" alt="image"></p>
+<p>コマンドプロンプトを開き、Hexo用ディレクトリに移動して、以下のように入力します。</p>
+<p>▼コマンドプロンプト</p>
+<pre><code>cd Hexo用ディレクトリ
+hexo new page &quot;links&quot;
+</code></pre>
+<p><code>Hexo用ディレクトリ\source\links</code> フォルダ内の <code>index.md</code> ファイルを、以下のように編集します。</p>
+<p>▼Hexo用ディレクトリ\source\links\index.md</p>
+<pre><code>---
+title: links
+date: 2023-02-27 18:03:34
+layout: links
+---
+</code></pre>
+<p><strong><code>layout: links</code> が必須</strong>です。</p>
+<p>また、<code>Hexo用ディレクトリ\source</code> フォルダ内に「<strong>_data</strong>」フォルダ を作成し、その直下に「<strong>links.yml</strong>」ファイルを作成して編集します。</p>
+<p>編集内容のサンプルは下記となります。リンクを複数に増やす場合は、続けて記載していけばOKです。</p>
+<p>▼Hexo用ディレクトリ\source\_data\links.yml</p>
+<pre><code>Github atman-33: 
+    link: https://github.com/atman-33
+    avatar: https://avatars.githubusercontent.com/u/41929192?v=4
+    descr: &quot;Github トップページ&quot;
+
+Google Material Icons: 
+    link: https://fonts.google.com/icons?icon.set=Material+Icons
+    avatar: https://www.gstatic.com/images/icons/material/apps/fonts/1x/catalog/v5/favicon.svg
+    descr: &quot;Google マテリアルアイコン&quot;
+
+</code></pre>
+<h3><span id="問い合わせページ作成">問い合わせページ作成</span></h3><p>▼テーマ_config.yml<br><img src="/hexo-material-blog-template/2023/03/04/1-material-theme-hexo/23.png" alt="image"></p>
+<p>コマンドプロンプトを開き、Hexo用ディレクトリに移動して、以下のように入力します。</p>
+<p>▼コマンドプロンプト</p>
+<pre><code>cd Hexo用ディレクトリ
+hexo new page &quot;about&quot;
+</code></pre>
+<p><code>Hexo用ディレクトリ\source\about</code> フォルダ内の <code>index.md</code> ファイルを編集します。</p>
+<p>▼Hexo用ディレクトリ\source\about\index.md</p>
+<pre><code>---
+title: 問い合わせ
+date: 2023-02-27 18:14:12
+---
+
+ご閲覧頂きありがとうございます。
+
+質問・要望などありましたら、Twitterで連絡ください。
+
+※ここにTwitterのURLなど
+</code></pre>
+<p>このページは、通常の固定ページです。<br>そこにTwitterなどのURLを掲載すれば、問合せ先として利用可能です。</p>
+<hr>
+<p>以上です。</p>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/hexo-material-blog-template/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/hexo-material-blog-template/img/avatar.png" alt="Atman's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="https://twitter.com/atman_33" target="_blank" title="Tweet Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Tweet Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/hexo-material-blog-template/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                ホーム
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    過去の投稿
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/hexo-material-blog-template/archives/2023/03/">3月 2023<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                
+                カテゴリー
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                <a class="sidebar_archives-link" href="/hexo-material-blog-template/categories/Hexo/">Hexo<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+            <li class="divider"></li>
+        
+    
+
+    <!-- Pages  -->
+    
+        <li>
+            <a href="/tags" title="タグ">
+                
+                    <i class="material-icons sidebar-material-icons">cloud_circle</i>
+                
+                タグ
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/links" title="リンク">
+                
+                    <i class="material-icons sidebar-material-icons">face</i>
+                
+                リンク
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/about" title="問い合わせ">
+                
+                    <i class="material-icons sidebar-material-icons">help</i>
+                
+                問い合わせ
+            </a>
+        </li>
+        
+    
+
+    <!-- Article Number  -->
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+    <a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+            テーマ - Material
+            <span class="sidebar-badge badge-circle">i</span>
+        </div>
+    </a>
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+        <a href="https://twitter.com/twitter" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-twitter">
+                <span class="visuallyhidden">Twitter</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Facebook -->
+    
+        <a href="https://www.facebook.com/facebook" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-facebook">
+                <span class="visuallyhidden">Facebook</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Google + -->
+    
+        <a href="https://www.google.com/" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-gplus">
+                <span class="visuallyhidden">Google Plus</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+
+    <!-- V2EX -->
+    
+
+    <!-- Segmentfault -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;<span year></span>&nbsp;Computing Atman（Hexo ver）
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/hexo-material-blog-template/js/lazyload.min.js?1BcfzuNXqV+ntF6gq+5X3Q==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/hexo-material-blog-template/js/js.min.js?Bn9UzEm8RrBSxqyZB0zPjA==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/hexo-material-blog-template/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('
+<link rel="stylesheet" href="/hexo-material-blog-template/css/uc.css">
+');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+
+    
+        <script>lsloader.load("hanabi","/hexo-material-blog-template/js/hanabi-browser-bundle.js?hJ12BA2w8EFQQbRgDu50YA==", true)</script>
+    
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+    
+        
+        
+        HanabiBrowser.start('pre code',false);
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    var copyrightNow = new Date().getFullYear();
+    var textContent = document.querySelector('span[year]')
+
+    copyrightSince = 2023;
+    if (copyrightSince === copyrightNow||copyrightSince === 0000) {
+        textContent.textContent = copyrightNow
+    } else {
+        textContent.textContent = copyrightSince + ' - ' + copyrightNow
+    }
+
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.6 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>
